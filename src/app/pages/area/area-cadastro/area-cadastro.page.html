@@ -1,0 +1,53 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Cadastrar Área</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list lines="none" class="ion-padding">
+        <form [formGroup]="areaForm">
+            <ion-item>
+                <ion-label position="floating">Nome <ion-text color="danger">*</ion-text>
+                </ion-label>
+                <ion-input required formControlName="nome"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>Fertilidade</ion-label>
+                <ion-toggle formControlName="fertilidade" color="success"></ion-toggle>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Observação</ion-label>
+                <ion-textarea formControlName="observacao"></ion-textarea>
+            </ion-item>
+            <div class="duplo">
+                <ion-item>
+                    <ion-label position="floating">Tamanho da Área <ion-text color="danger">*</ion-text>
+                    </ion-label>
+                    <ion-input required formControlName="tamanho" readonly></ion-input>
+                </ion-item>
+                <ion-button (click)="desenharArea()">
+                    Desenhar Área
+                </ion-button>
+            </div>
+            <div class="duplo">
+                <ion-item>
+                    <ion-label position="floating">Espécie de Capim <ion-text color="danger">*</ion-text>
+                    </ion-label>
+                    <ion-input required formControlName="especie" readonly></ion-input>
+                </ion-item>
+                <ion-button (click)="buscarCapim()">
+                    Buscar Espécie
+                </ion-button>
+            </div>
+        </form>
+    </ion-list>
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+        <ion-button (click)="concluir()" size="full">
+            Finalizar Área
+        </ion-button>
+    </ion-toolbar>
+</ion-footer>

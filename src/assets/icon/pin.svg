@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" version="1.1"
+    style="shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;"
+    viewBox="0 0 92 167.5" x="0px" y="0px" fill-rule="evenodd" clip-rule="evenodd">
+    <defs>
+        <style type="text/css">
+            .fil0 {
+                fill: #FF8400
+            }
+        </style>
+    </defs>
+    <g>
+        <path class="fil0"
+            d="M46 0c26,0 46,20 46,44 0,17 -24,53 -38,75 -4,6 -12,6 -15,0 -15,-22 -39,-58 -39,-75 0,-24 21,-44 46,-44zm0 16c16,0 29,13 29,29 0,16 -13,29 -29,29 -16,0 -29,-13 -29,-29 0,-16 13,-29 29,-29z" />
+        <ellipse class="fil0" cx="46" cy="130" rx="22" ry="4" />
+    </g>
+</svg>

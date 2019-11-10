@@ -17,10 +17,15 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
-    }
+      title: 'Usuário',
+      url: 'usuario/login',
+      icon: 'person'
+    },
+    {
+      title: 'Áreas',
+      url: 'area/lista',
+      src: './assets/icon/fence.svg'
+    },
   ];
 
   constructor(

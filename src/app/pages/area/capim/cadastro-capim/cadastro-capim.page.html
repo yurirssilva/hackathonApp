@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Cadastrar Espécie</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+    <div>
+        <ion-item>
+            <ion-label position="floating">Nome da espécie <ion-text color="danger">*</ion-text>
+            </ion-label>
+            <ion-input required [(ngModel)]="capim.tipo"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Altura de Entrada
+            </ion-label>
+            <ion-input required [(ngModel)]="capim.alturaEntrada" type="number"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Altura de Saída em Maior Fertilização <ion-text color="danger">*</ion-text>
+            </ion-label>
+            <ion-input required [(ngModel)]="capim.alturaSaidaMaiorFert" type="number"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Altura de Saída em Menor Fertilização <ion-text color="danger">*</ion-text>
+            </ion-label>
+            <ion-input required [(ngModel)]="capim.alturaSaidaMenorFert" type="number"></ion-input>
+        </ion-item>
+    </div>
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+        <ion-button (click)="cadastrar()">
+            Novo Cadastro
+        </ion-button>
+    </ion-toolbar>
+</ion-footer>

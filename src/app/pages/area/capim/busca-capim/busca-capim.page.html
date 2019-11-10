@@ -1,0 +1,36 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Buscar Espécie</ion-title>
+        <ion-buttons slot="end">
+            <ion-button (click)="fechar()">
+                <ion-icon slot="start" name="close"></ion-icon>
+                Fechar
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ng-template ngFor let-especie [ngForOf]="especies">
+            <ion-item (click)="fechar(especie)">
+                <ion-label>
+                    <h2>
+                        Espécie
+                    </h2>
+                    <p>
+                        {{especie.tipo}}
+                    </p>
+                </ion-label>
+            </ion-item>
+        </ng-template>
+    </ion-list>
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+        <ion-button (click)="adicionarCapim()" size="full">
+            Adicionar Espécie
+        </ion-button>
+    </ion-toolbar>
+</ion-footer>
